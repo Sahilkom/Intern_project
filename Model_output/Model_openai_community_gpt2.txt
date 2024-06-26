@@ -1,0 +1,26 @@
+**Query 1:** fetch all the tables that can be joined
+**Response:** Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+
+Table: employees
+Description: Stores employee information
+Columns: employee_id (Unique identifier for each employee), first_name (First name of the employee), last_name (Last name of the employee), email (Email address of the employee), phone_number (Phone number of the employee), hire_date (Date the employee was hired), job_title (Job title of the employee), department (Department where the employee works), manager_id (ID of the employee's manager), salary (Annual salary of the employee), bonus (Annual bonus of the employee), commission_pct (Commission percentage of the employee), address (Address of the employee), city (City of the employee), state (State of the employee)
+
+
+Table: employees
+Description: Stores employee information
+Columns: employee_id (Unique identifier for each employee), first_name (First name of the employee), last_name (Last name of the employee), email (Email address of the employee), phone_number (Phone number of the employee), hire_date (Date the employee was hired), job_title (Job title of the employee), department (Department where the employee works), manager_id (ID of the employee's manager), salary (Annual salary of the employee), bonus (Annual bonus of the employee), commission_pct (Commission percentage of the employee), address (Address of the employee), city (City of the employee), state (State of the employee)
+
+
+Table: sales
+Description: Stores sales information
+Columns: sale_id (Unique identifier for each sale), customer_id (ID of the customer who made the purchase), product_id (ID of the purchased product), sale_date (Date of the sale), quantity (Quantity of products sold), total_amount (Total amount for the sale), sales_channel (Channel through which the sale was made (e.g., Online, In-store)), payment_method (Payment method used for the sale), discount (Discount applied to the sale), sales_rep (Sales representative handling the sale), delivery_date (Delivery date of the sold product), delivery_status (Delivery status of the sold product), invoice_number (Invoice number for the sale), shipping_cost (Shipping cost for the sale), tax_amount (Tax amount applied to the sale)
+
+
+Table: sales
+Description: Stores sales information
+Columns: sale_id (Unique identifier for each sale), customer_id (ID of the customer who made the purchase), product_id (ID of the purchased product), sale_date (Date of the sale), quantity (Quantity of products sold), total_amount (Total amount for the sale), sales_channel (Channel through which the sale was made (e.g., Online, In-store)), payment_method (Payment method used for the sale), discount (Discount applied to the sale), sales_rep (Sales representative handling the sale), delivery_date (Delivery date of the sold product), delivery_status (Delivery status of the sold product), invoice_number (Invoice number for the sale), shipping_cost (Shipping cost for the sale), tax_amount (Tax amount applied to the sale)
+
+
+Question: fetch all the tables that can be joined
+Helpful Answer: the next question is if you can fetch all the tables that can be joined. If you can't get any rows for a given table, then your job can't be completed. However, you can do some extra work here. A table can be joined with an existing row if its position is outside the assigned (e.g., "0") row name. This is so that you can find each row in the table, and in particular on its own, if the position on the list of cells outside the assigned (e.g., row1 was a list of cells outside the assigned), you can actually count each row on the list of cells inside the assigned. Table: members
+Description: the next question is if you can join all the tables that can be joined with. If you can't join the tables that can be joined with, the current job has been terminated. How this is done is up for discussion here, but in a nutshell, the job is not terminated if you want to join all the tables that can be joined with. If you decide to join all the tables that can be joined (for one, two, or three reasons, it's pretty straight forward), then you can just put an option like "join all"; of course this option will only perform an empty job, but it will probably work for other jobs too. For instance, to join all the columns that can be joined (e.g., columns 1, 2, 5, 6), you might want

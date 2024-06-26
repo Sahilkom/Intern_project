@@ -1,0 +1,45 @@
+Based on the provided context, we have multiple tables that can potentially be joined. However, to join tables, we need to ensure that they have a common column with matching data types.
+
+Here are the tables that can potentially be joined based on their common columns:
+
+1. Products and Sales: Both tables have a common column called "product_id". This column can be used to join the two tables and retrieve information about the products sold.
+
+2. Sales and Support_Tickets: Both tables have a common column called "sale_id". This column can be used to join the two tables and retrieve information about the sales that have generated support tickets.
+
+3. Products and Marketing_Campaigns: Both tables have a common column called "product_id". This column can be used to join the two tables and retrieve information about the marketing campaigns for specific products.
+
+4. Stores and Marketing_Campaigns: Both tables have a common column called "store_id". This column can be used to join the two tables and retrieve information about the marketing campaigns for specific stores.
+
+5. Customers and Orders: Both tables have a common column called "customer_id". This column can be used to join the two tables and retrieve information about the orders placed by specific customers.
+
+6. Orders and Products: Both tables have a common column called "product_id". This column can be used to join the two tables and retrieve information about the products ordered by customers.
+
+7. Employees and Departments: Both tables have a common column called "department_id". This column can be used to join the two tables and retrieve information about the employees working in specific departments.
+
+8. Inventory and Suppliers: Both tables have a common column called "supplier_id". This column can be used to join the two tables and retrieve information about the inventory levels for specific suppliers.
+
+9. Sales and Employees: Both tables have a common column called "employee_id". This column can be used to join the two tables and retrieve information about the sales made by specific employees.
+
+10. Sales and Departments: Both tables have a common column called "department_id". This column can be used to join the two tables and retrieve information about the sales made by specific departments.
+
+11. Marketing_Campaigns and Stores: Both tables have a common column called "store_id". This column can be used to join the two tables and retrieve information about the marketing campaigns for specific stores.
+
+12. Marketing_Campaigns and Products: Both tables have a common column called "product_id". This column can be used to join the two tables and retrieve information about the marketing campaigns for specific products.
+
+13. Marketing_Campaigns and Employees: Both tables have a common column called "employee_id". This column can be used to join the two tables and retrieve information about the employees involved in specific marketing campaigns.
+
+14. Marketing_Campaigns and Departments: Both tables have a common column called "department_id". This column can be used to join the two tables and retrieve information about the departments involved in specific marketing campaigns.
+
+15. Sales and Marketing_Campaigns: Both tables have a common column called "campaign_id". This column can be used to join the two tables and retrieve information about the sales made as a result of specific marketing campaigns.
+
+16. Sales and Employees: Both tables have a common column called "employee_id". This column can be used to join the two tables and retrieve information about the sales made by specific employees.
+
+17. Sales and Departments: Both tables have a common column called "department_id". This column can be used to join the two tables and retrieve information about the sales made by specific departments.
+
+18. Sales and Marketing_Campaigns: Both tables have a common column called "campaign_id". This column can be used to join the two tables and retrieve information about the sales made as a result of specific marketing campaigns.
+
+19. Sales and Support_Tickets: Both tables have a common column called "sale_id". This column can be used to join the two tables and retrieve information about the support tickets generated as a result of specific sales.
+
+20. Sales and Customers: Both tables have a common column called "customer_id". This column can be used to join the two tables and retrieve information about the sales made to specific customers.
+
+21. Sales and Orders: Both tables have a common column called "order_id". This column can be used to join the two tables and retrieve information about the sales made as a result of specific orders.
