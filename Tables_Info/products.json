@@ -1,0 +1,102 @@
+{
+    "table_name": "products",
+    "description": "Stores product information",
+    "columns": [
+        {
+            "name": "product_id",
+            "description": "Unique identifier for each product"
+        },
+        {
+            "name": "product_name",
+            "description": "Name of the product"
+        },
+        {
+            "name": "category",
+            "description": "Product category (e.g., Smartphone, TV)"
+        },
+        {
+            "name": "launch_date",
+            "description": "Launch date of the product"
+        },
+        {
+            "name": "price",
+            "description": "Price of the product"
+        },
+        {
+            "name": "manufacturer",
+            "description": "Manufacturer of the product"
+        },
+        {
+            "name": "warranty_period",
+            "description": "Warranty period of the product"
+        },
+        {
+            "name": "stock_quantity",
+            "description": "Quantity of product in stock"
+        },
+        {
+            "name": "rating",
+            "description": "Customer rating of the product"
+        },
+        {
+            "name": "dimensions",
+            "description": "Dimensions of the product"
+        },
+        {
+            "name": "weight",
+            "description": "Weight of the product"
+        },
+        {
+            "name": "color",
+            "description": "Color of the product"
+        },
+        {
+            "name": "material",
+            "description": "Material of the product"
+        },
+        {
+            "name": "power_usage",
+            "description": "Power usage of the product"
+        },
+        {
+            "name": "model_number",
+            "description": "Model number of the product"
+        }
+    ],
+    "data": [
+        [
+            101,
+            "Galaxy S21",
+            "Smartphone",
+            "2021-01-29",
+            799.99,
+            "Samsung",
+            "2 years",
+            5000,
+            4.5,
+            "151.7 x 71.2 x 7.9 mm",
+            "169 g",
+            "Phantom Gray",
+            "Aluminum",
+            "10W",
+            "SM-G991U"
+        ],
+        [
+            102,
+            "QLED TV",
+            "TV",
+            "2020-11-10",
+            1299.99,
+            "Samsung",
+            "3 years",
+            300,
+            4.7,
+            "1449.3 x 829.3 x 25.4 mm",
+            "21.6 kg",
+            "Black",
+            "Plastic",
+            "100W",
+            "QN55Q60TAFXZA"
+        ]
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "table_name": "marketing_campaigns",
+    "description": "Stores marketing campaign information",
+    "columns": [
+        {
+            "name": "campaign_id",
+            "description": "Unique identifier for each campaign"
+        },
+        {
+            "name": "campaign_name",
+            "description": "Name of the campaign"
+        },
+        {
+            "name": "start_date",
+            "description": "Start date of the campaign"
+        },
+        {
+            "name": "end_date",
+            "description": "End date of the campaign"
+        },
+        {
+            "name": "budget",
+            "description": "Budget allocated for the campaign"
+        },
+        {
+            "name": "target_audience",
+            "description": "Target audience for the campaign"
+        },
+        {
+            "name": "product_id",
+            "description": "ID of the promoted product"
+        },
+        {
+            "name": "channels",
+            "description": "Marketing channels used in the campaign (e.g., TV, Social Media)"
+        },
+        {
+            "name": "goal",
+            "description": "Primary goal of the campaign (e.g., Brand Awareness, Lead Generation)"
+        },
+        {
+            "name": "region",
+            "description": "Geographical region targeted by the campaign"
+        },
+        {
+            "name": "creative_idea",
+            "description": "Creative idea or theme of the campaign"
+        },
+        {
+            "name": "ad_spend",
+            "description": "Amount spent on advertising during the campaign"
+        },
+        {
+            "name": "leads_generated",
+            "description": "Number of leads generated through the campaign"
+        },
+        {
+            "name": "conversions",
+            "description": "Number of conversions achieved through the campaign"
+        },
+        {
+            "name": "roi",
+            "description": "Return on investment for the campaign"
+        }
+    ],
+    "data": [
+        [
+            1,
+            "Summer Sale",
+            "2023-06-01",
+            "2023-06-30",
+            100000,
+            "Young Adults",
+            101,
+            "Social Media, Email",
+            "Lead Generation",
+            "North America",
+            "Cool for the Summer",
+            60000,
+            1500,
+            300,
+            1.5
+        ],
+        [
+            2,
+            "Holiday Discount",
+            "2023-12-01",
+            "2023-12-31",
+            150000,
+            "Families",
+            102,
+            "TV, Social Media",
+            "Brand Awareness",
+            "Europe",
+            "Home for the Holidays",
+            90000,
+            2000,
+            500,
+            1.8
+        ]
+    ]
+}

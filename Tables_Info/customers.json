@@ -1,0 +1,102 @@
+{
+    "table_name": "customers",
+    "description": "Stores customer information",
+    "columns": [
+        {
+            "name": "customer_id",
+            "description": "Unique identifier for each customer"
+        },
+        {
+            "name": "first_name",
+            "description": "First name of the customer"
+        },
+        {
+            "name": "last_name",
+            "description": "Last name of the customer"
+        },
+        {
+            "name": "email",
+            "description": "Email address of the customer"
+        },
+        {
+            "name": "phone_number",
+            "description": "Phone number of the customer"
+        },
+        {
+            "name": "registration_date",
+            "description": "Date the customer registered"
+        },
+        {
+            "name": "country",
+            "description": "Country of the customer"
+        },
+        {
+            "name": "address",
+            "description": "Address of the customer"
+        },
+        {
+            "name": "city",
+            "description": "City of the customer"
+        },
+        {
+            "name": "state",
+            "description": "State of the customer"
+        },
+        {
+            "name": "zip_code",
+            "description": "ZIP code of the customer"
+        },
+        {
+            "name": "date_of_birth",
+            "description": "Date of birth of the customer"
+        },
+        {
+            "name": "gender",
+            "description": "Gender of the customer"
+        },
+        {
+            "name": "loyalty_status",
+            "description": "Loyalty status of the customer (e.g., Gold, Silver)"
+        },
+        {
+            "name": "last_purchase_date",
+            "description": "Date of the last purchase made by the customer"
+        }
+    ],
+    "data": [
+        [
+            1,
+            "John",
+            "Doe",
+            "john.doe@example.com",
+            "123-456-7890",
+            "2020-01-01",
+            "USA",
+            "123 Main St",
+            "New York",
+            "NY",
+            "10001",
+            "1980-01-01",
+            "Male",
+            "Gold",
+            "2021-05-01"
+        ],
+        [
+            2,
+            "Jane",
+            "Smith",
+            "jane.smith@example.com",
+            "234-567-8901",
+            "2019-06-15",
+            "UK",
+            "456 High St",
+            "London",
+            "",
+            "SW1A 1AA",
+            "1985-07-15",
+            "Female",
+            "Silver",
+            "2021-06-01"
+        ]
+    ]
+}

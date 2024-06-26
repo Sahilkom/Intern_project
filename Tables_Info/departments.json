@@ -1,0 +1,102 @@
+{
+    "table_name": "departments",
+    "description": "Stores department information",
+    "columns": [
+        {
+            "name": "department_id",
+            "description": "Unique identifier for each department"
+        },
+        {
+            "name": "department_name",
+            "description": "Name of the department"
+        },
+        {
+            "name": "manager_id",
+            "description": "ID of the department manager"
+        },
+        {
+            "name": "location",
+            "description": "Location of the department"
+        },
+        {
+            "name": "budget",
+            "description": "Annual budget of the department"
+        },
+        {
+            "name": "phone_number",
+            "description": "Contact phone number for the department"
+        },
+        {
+            "name": "email",
+            "description": "Contact email for the department"
+        },
+        {
+            "name": "number_of_employees",
+            "description": "Number of employees in the department"
+        },
+        {
+            "name": "established_date",
+            "description": "Date the department was established"
+        },
+        {
+            "name": "department_goal",
+            "description": "Primary goal of the department"
+        },
+        {
+            "name": "performance_rating",
+            "description": "Performance rating of the department"
+        },
+        {
+            "name": "primary_function",
+            "description": "Primary function of the department"
+        },
+        {
+            "name": "subsidiary",
+            "description": "Subsidiary under which the department operates"
+        },
+        {
+            "name": "main_product",
+            "description": "Main product the department deals with"
+        },
+        {
+            "name": "strategy",
+            "description": "Strategic goals of the department"
+        }
+    ],
+    "data": [
+        [
+            101,
+            "Sales",
+            301,
+            "Building A",
+            500000,
+            "555-666-7777",
+            "sales@company.com",
+            50,
+            "2010-01-01",
+            "Increase revenue",
+            4.5,
+            "Selling products",
+            "Global",
+            "Smartphones",
+            "Expand market share"
+        ],
+        [
+            102,
+            "Marketing",
+            302,
+            "Building B",
+            300000,
+            "666-777-8888",
+            "marketing@company.com",
+            40,
+            "2011-02-01",
+            "Enhance brand visibility",
+            4.2,
+            "Promoting products",
+            "Global",
+            "Advertising campaigns",
+            "Boost brand recognition"
+        ]
+    ]
+}

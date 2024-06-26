@@ -1,0 +1,102 @@
+{
+    "table_name": "employees",
+    "description": "Stores employee information",
+    "columns": [
+        {
+            "name": "employee_id",
+            "description": "Unique identifier for each employee"
+        },
+        {
+            "name": "first_name",
+            "description": "First name of the employee"
+        },
+        {
+            "name": "last_name",
+            "description": "Last name of the employee"
+        },
+        {
+            "name": "email",
+            "description": "Email address of the employee"
+        },
+        {
+            "name": "phone_number",
+            "description": "Phone number of the employee"
+        },
+        {
+            "name": "hire_date",
+            "description": "Date the employee was hired"
+        },
+        {
+            "name": "job_title",
+            "description": "Job title of the employee"
+        },
+        {
+            "name": "department",
+            "description": "Department where the employee works"
+        },
+        {
+            "name": "manager_id",
+            "description": "ID of the employee's manager"
+        },
+        {
+            "name": "salary",
+            "description": "Annual salary of the employee"
+        },
+        {
+            "name": "bonus",
+            "description": "Annual bonus of the employee"
+        },
+        {
+            "name": "commission_pct",
+            "description": "Commission percentage of the employee"
+        },
+        {
+            "name": "address",
+            "description": "Address of the employee"
+        },
+        {
+            "name": "city",
+            "description": "City of the employee"
+        },
+        {
+            "name": "state",
+            "description": "State of the employee"
+        }
+    ],
+    "data": [
+        [
+            301,
+            "Alice",
+            "Johnson",
+            "alice.johnson@company.com",
+            "333-444-5555",
+            "2015-06-01",
+            "Sales Manager",
+            "Sales",
+            201,
+            90000,
+            5000,
+            10,
+            "456 Maple St",
+            "Seattle",
+            "WA"
+        ],
+        [
+            302,
+            "Bob",
+            "Lee",
+            "bob.lee@company.com",
+            "444-555-6666",
+            "2018-09-15",
+            "Marketing Specialist",
+            "Marketing",
+            202,
+            60000,
+            3000,
+            5,
+            "789 Oak St",
+            "Chicago",
+            "IL"
+        ]
+    ]
+}

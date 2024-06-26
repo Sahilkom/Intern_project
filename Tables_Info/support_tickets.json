@@ -1,0 +1,102 @@
+{
+    "table_name": "support_tickets",
+    "description": "Stores customer support ticket information",
+    "columns": [
+        {
+            "name": "ticket_id",
+            "description": "Unique identifier for each support ticket"
+        },
+        {
+            "name": "customer_id",
+            "description": "ID of the customer who raised the ticket"
+        },
+        {
+            "name": "product_id",
+            "description": "ID of the product related to the ticket"
+        },
+        {
+            "name": "issue_date",
+            "description": "Date the issue was reported"
+        },
+        {
+            "name": "issue_type",
+            "description": "Type of issue (e.g., Hardware, Software)"
+        },
+        {
+            "name": "resolution_date",
+            "description": "Date the issue was resolved"
+        },
+        {
+            "name": "status",
+            "description": "Status of the ticket (e.g., Open, Closed)"
+        },
+        {
+            "name": "support_agent",
+            "description": "Support agent handling the ticket"
+        },
+        {
+            "name": "priority",
+            "description": "Priority level of the ticket"
+        },
+        {
+            "name": "response_time",
+            "description": "Time taken to respond to the ticket"
+        },
+        {
+            "name": "issue_description",
+            "description": "Description of the issue"
+        },
+        {
+            "name": "resolution_details",
+            "description": "Details of the resolution"
+        },
+        {
+            "name": "feedback_score",
+            "description": "Feedback score given by the customer"
+        },
+        {
+            "name": "follow_up_date",
+            "description": "Date for a follow-up on the ticket"
+        },
+        {
+            "name": "category",
+            "description": "Category of the issue"
+        }
+    ],
+    "data": [
+        [
+            5001,
+            1,
+            101,
+            "2021-03-05",
+            "Hardware",
+            "2021-03-10",
+            "Closed",
+            "Sam Carter",
+            "High",
+            "2 hours",
+            "Battery issue",
+            "Replaced battery",
+            5,
+            "2021-03-15",
+            "Technical"
+        ],
+        [
+            5002,
+            2,
+            102,
+            "2021-04-12",
+            "Software",
+            "2021-04-15",
+            "Closed",
+            "Sara Collins",
+            "Medium",
+            "4 hours",
+            "Software update issue",
+            "Reinstalled software",
+            4,
+            "2021-04-20",
+            "Technical"
+        ]
+    ]
+}

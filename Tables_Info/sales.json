@@ -1,0 +1,102 @@
+{
+    "table_name": "sales",
+    "description": "Stores sales information",
+    "columns": [
+        {
+            "name": "sale_id",
+            "description": "Unique identifier for each sale"
+        },
+        {
+            "name": "customer_id",
+            "description": "ID of the customer who made the purchase"
+        },
+        {
+            "name": "product_id",
+            "description": "ID of the purchased product"
+        },
+        {
+            "name": "sale_date",
+            "description": "Date of the sale"
+        },
+        {
+            "name": "quantity",
+            "description": "Quantity of products sold"
+        },
+        {
+            "name": "total_amount",
+            "description": "Total amount for the sale"
+        },
+        {
+            "name": "sales_channel",
+            "description": "Channel through which the sale was made (e.g., Online, In-store)"
+        },
+        {
+            "name": "payment_method",
+            "description": "Payment method used for the sale"
+        },
+        {
+            "name": "discount",
+            "description": "Discount applied to the sale"
+        },
+        {
+            "name": "sales_rep",
+            "description": "Sales representative handling the sale"
+        },
+        {
+            "name": "delivery_date",
+            "description": "Delivery date of the sold product"
+        },
+        {
+            "name": "delivery_status",
+            "description": "Delivery status of the sold product"
+        },
+        {
+            "name": "invoice_number",
+            "description": "Invoice number for the sale"
+        },
+        {
+            "name": "shipping_cost",
+            "description": "Shipping cost for the sale"
+        },
+        {
+            "name": "tax_amount",
+            "description": "Tax amount applied to the sale"
+        }
+    ],
+    "data": [
+        [
+            1001,
+            1,
+            101,
+            "2021-02-15",
+            1,
+            799.99,
+            "Online",
+            "Credit Card",
+            0,
+            "Alice Johnson",
+            "2021-02-20",
+            "Delivered",
+            "INV1001",
+            20,
+            60
+        ],
+        [
+            1002,
+            2,
+            102,
+            "2021-03-01",
+            1,
+            1299.99,
+            "In-store",
+            "Cash",
+            100,
+            "Bob Lee",
+            "2021-03-03",
+            "Delivered",
+            "INV1002",
+            0,
+            90
+        ]
+    ]
+}

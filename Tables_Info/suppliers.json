@@ -1,0 +1,102 @@
+{
+    "table_name": "suppliers",
+    "description": "Stores supplier information",
+    "columns": [
+        {
+            "name": "supplier_id",
+            "description": "Unique identifier for each supplier"
+        },
+        {
+            "name": "supplier_name",
+            "description": "Name of the supplier"
+        },
+        {
+            "name": "contact_name",
+            "description": "Contact person's name at the supplier"
+        },
+        {
+            "name": "contact_email",
+            "description": "Contact person's email at the supplier"
+        },
+        {
+            "name": "contact_phone",
+            "description": "Contact person's phone number at the supplier"
+        },
+        {
+            "name": "address",
+            "description": "Address of the supplier"
+        },
+        {
+            "name": "city",
+            "description": "City where the supplier is located"
+        },
+        {
+            "name": "state",
+            "description": "State where the supplier is located"
+        },
+        {
+            "name": "zip_code",
+            "description": "ZIP code of the supplier's location"
+        },
+        {
+            "name": "country",
+            "description": "Country where the supplier is located"
+        },
+        {
+            "name": "products_supplied",
+            "description": "Products supplied by the supplier"
+        },
+        {
+            "name": "rating",
+            "description": "Rating of the supplier"
+        },
+        {
+            "name": "payment_terms",
+            "description": "Payment terms agreed with the supplier"
+        },
+        {
+            "name": "delivery_schedule",
+            "description": "Delivery schedule agreed with the supplier"
+        },
+        {
+            "name": "last_order_date",
+            "description": "Date when the last order was placed with the supplier"
+        }
+    ],
+    "data": [
+        [
+            1,
+            "Tech Supplies Co.",
+            "Emily Green",
+            "emily.green@techsupplies.com",
+            "111-222-3333",
+            "789 Industrial Way",
+            "San Francisco",
+            "CA",
+            "94103",
+            "USA",
+            "Smartphones",
+            4.8,
+            "Net 30",
+            "Weekly",
+            "2021-05-15"
+        ],
+        [
+            2,
+            "Home Electronics Inc.",
+            "Michael Brown",
+            "michael.brown@homeelectronics.com",
+            "222-333-4444",
+            "123 Tech Park",
+            "Austin",
+            "TX",
+            "73301",
+            "USA",
+            "TVs",
+            4.6,
+            "Net 60",
+            "Bi-weekly",
+            "2021-06-01"
+        ]
+    ]
+}
