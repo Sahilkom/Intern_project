@@ -1,0 +1,121 @@
+*************************************************************************************************************************************
+******************************************************[Query 1]**********************************************************************
+*************************************************************************************************************************************
+</s>
+<|user|>
+Tell me Name of tables present in data
+</s>
+<|assistant|>
+Based on the context provided, the following tables are mentioned in the data:
+
+1. Products
+2. Sales
+3. Support Tickets
+4. Marketing Campaigns
+5. Stores
+6. Marketing Campaign Information
+7. Employees
+8. Departments
+9. Inventory
+10. Suppliers
+11. Orders
+12. Customers
+
+
+*************************************************************************************************************************************
+******************************************************[Query 2]**********************************************************************
+*************************************************************************************************************************************
+</s>
+<|user|>
+Don't count Stores as a table and now tell me the name of all unique tables
+</s>
+<|assistant|>
+Based on the provided context, the unique tables are:
+1. Products
+2. Sales
+3. Support_Tickets
+4. Marketing_Campaigns
+5. Orders
+6. Customers
+7. Suppliers
+8. Employees
+9. Departments
+10. Inventory
+
+*************************************************************************************************************************************
+******************************************************[Query 3]**********************************************************************
+*************************************************************************************************************************************
+</s>
+<|user|>
+Tell me how all tables are related to each other
+</s>
+<|assistant|>
+Based on the information provided in the context, here's how the tables are related to each other:
+
+1. Products: This table stores information about each product, such as its unique identifier (product_id) and description.
+
+2. Sales: This table stores information about each sale, including the unique identifier (sale_id) and the product_id of the product sold.
+
+3. Support Tickets: This table stores information about customer support tickets, including the unique identifier (ticket_id) and the product_id of the product related to the ticket.
+
+4. Marketing Campaigns: This table stores information about marketing campaigns, such as their unique identifier (campaign_id).
+
+5. Stores: This table doesn't seem to be directly related to the other tables, as it only seems to store information about the table names and their descriptions.
+
+6. Employees: This table stores information about each employee, including their unique identifier (employee_id).
+
+7. Departments: This table stores information about each department, such as its unique identifier (department_id).
+
+8. Inventory: This table stores information about each inventory record, including the unique identifier (inventory_id) and the product_id of the product.
+
+9. Suppliers: This table stores information about each supplier, including their unique identifier (supplier_id).
+
+10. Orders: This table stores information about each order, including the unique identifier (order_id) and the customer_id of the customer who placed the order.
+
+11. Customers: This table stores information about each customer, including their unique identifier (customer_id).
+
+*************************************************************************************************************************************
+******************************************************[Query 4]**********************************************************************
+*************************************************************************************************************************************
+</s>
+<|user|>
+Tell me Tables name that can be joined with each other
+</s>
+<|assistant|>
+Based on the provided context, the following tables can be joined with each other:
+
+1. Products and Sales: Both tables have a common column called "product_id", which can be used to join them.
+
+2. Products and Support Tickets: Both tables have a common column called "product_id", which can be used to join them.
+
+3. Products, Suppliers, and Orders: The Products table has a column called "product_id", which can be joined with the "product_id" column in the Orders table. The Orders table also has a column called "supplier_id", which can be joined with the "supplier_id" column in the Suppliers table.
+
+4. Customers and Orders: Both tables have a common column called "customer_id", which can be used to join them.
+
+5. Stores, Products, and Employees: The Stores table has a column called "store_id", which can be joined with the "store_id" column in the Products table. The Products table also has a column called "employee_id", which can be joined with the "employee_id" column in the Employees table.
+
+6. Marketing Campaigns and Products: Both tables have a common column called "product_id", which can be used to join them.
+
+7. Marketing Campaigns and Employees: The Marketing Campaigns table has a column called "campaign_manager_id", which can be joined with the "employee_id" column in the Employees table.
+
+8. Marketing Campaigns and Departments: The Marketing Campaigns table has a column called "department_id", which can be joined with the "department_id" column in the Departments table.
+
+9. Marketing Campaigns and Stores: The Marketing Campaigns table has a column called "store_id", which can be joined with the "store_id" column in the Stores table.
+
+10. Marketing Campaigns and Customers: The Marketing Campaigns table has a column called "customer_id", which can be joined with the "customer_id" column in the Customers table.
+
+*************************************************************************************************************************************
+******************************************************[Query 5]**********************************************************************
+*************************************************************************************************************************************
+</s>
+<|user|>
+Give me those tables that can be joined with each other on basis of product_id
+</s>
+<|assistant|>
+Based on the provided context, the tables that can be joined with each other on the basis of product_id are:
+
+1. Table for unique identifiers of products (columns/0/description)
+2. Table for unique identifiers of sales (columns/0/description)
+3. Table for unique identifiers of support tickets (columns/0/description)
+4. Table for unique identifiers of campaigns (columns/0/description)
+5. Table for unique identifiers of inventory records (columns/0/description)
