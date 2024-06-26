@@ -1,0 +1,48 @@
+**Query 1:** fetch all the tables that can be joined
+**Response:** Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+
+Table: employees
+Description: Stores employee information
+Columns: employee_id (Unique identifier for each employee), first_name (First name of the employee), last_name (Last name of the employee), email (Email address of the employee), phone_number (Phone number of the employee), hire_date (Date the employee was hired), job_title (Job title of the employee), department (Department where the employee works), manager_id (ID of the employee's manager), salary (Annual salary of the employee), bonus (Annual bonus of the employee), commission_pct (Commission percentage of the employee), address (Address of the employee), city (City of the employee), state (State of the employee)
+
+
+Table: employees
+Description: Stores employee information
+Columns: employee_id (Unique identifier for each employee), first_name (First name of the employee), last_name (Last name of the employee), email (Email address of the employee), phone_number (Phone number of the employee), hire_date (Date the employee was hired), job_title (Job title of the employee), department (Department where the employee works), manager_id (ID of the employee's manager), salary (Annual salary of the employee), bonus (Annual bonus of the employee), commission_pct (Commission percentage of the employee), address (Address of the employee), city (City of the employee), state (State of the employee)
+
+
+Table: sales
+Description: Stores sales information
+Columns: sale_id (Unique identifier for each sale), customer_id (ID of the customer who made the purchase), product_id (ID of the purchased product), sale_date (Date of the sale), quantity (Quantity of products sold), total_amount (Total amount for the sale), sales_channel (Channel through which the sale was made (e.g., Online, In-store)), payment_method (Payment method used for the sale), discount (Discount applied to the sale), sales_rep (Sales representative handling the sale), delivery_date (Delivery date of the sold product), delivery_status (Delivery status of the sold product), invoice_number (Invoice number for the sale), shipping_cost (Shipping cost for the sale), tax_amount (Tax amount applied to the sale)
+
+
+Table: sales
+Description: Stores sales information
+Columns: sale_id (Unique identifier for each sale), customer_id (ID of the customer who made the purchase), product_id (ID of the purchased product), sale_date (Date of the sale), quantity (Quantity of products sold), total_amount (Total amount for the sale), sales_channel (Channel through which the sale was made (e.g., Online, In-store)), payment_method (Payment method used for the sale), discount (Discount applied to the sale), sales_rep (Sales representative handling the sale), delivery_date (Delivery date of the sold product), delivery_status (Delivery status of the sold product), invoice_number (Invoice number for the sale), shipping_cost (Shipping cost for the sale), tax_amount (Tax amount applied to the sale)
+
+
+Question: fetch all the tables that can be joined
+Helpful Answer: All tables in the system
+A. Find all tables that can be joined
+SELECT table1.name, table2.name, (
+    SELECT SUM(column1.value)
+    FROM table1 AS column1
+    JOIN table2 AS column2 ON column1.table1_id = column2.table1_id
+    WHERE column2.table2_id IS NULL
+)
+FROM table1 inner join table2 on table1.table1_id = table2.table2_id
+
+B. Select all tables that can be joined
+SELECT table1.name, table2.name, (
+    SELECT SUM(column1.value)
+    FROM table1, table2
+    WHERE table1.employee_id = table2.employee_id
+    AND table2.table5_id IS NULL
+)
+FROM table1 inner join table2 on table1.employee_id = table2.employee_id
+GROUP BY table1.name, table2.name
+
+C. All tables in the system
+SELECT all_tables.name, all_tables.schema_id
+FROM all_tables inner join table1 on all_tables.table1_id = table1.table1_id
+ORDER BY all_tables.
