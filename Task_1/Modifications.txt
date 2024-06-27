@@ -1,0 +1,32 @@
+____________________________________________________________________________
+
+1. Product_id (Description: ID of the purchased item)
+
+    Products -> product_code
+    Sales -> transaction_product_id
+    Support_tickects -> product_issue_id
+    Inventry -> inventry_item_id
+    Market Campaigns -> advertised_product_id
+____________________________________________________________________________
+
+2. Customer_id (Description: ID of the customer who made the purchase)
+    
+    Customers -> client_id
+    Sales -> buyer_id
+    Supports_ticket -> client_ticket_id
+    Order -> purchaser_order_id
+____________________________________________________________________________
+
+3. Phone_number (Description: contact number for audio communination)
+   
+   Customers -> customer_contact_number
+   Employee -> staff_contact
+   Department -> department_telephone
+____________________________________________________________________________
+
+4. Address (Description: Physical location of agent)
+   
+   Customers -> customer_home_address
+   Employee -> staff_residence
+   supplier -> supplier_office_address
+____________________________________________________________________________
