@@ -1,0 +1,194 @@
+____________________________________________________[Standard Queries]_______________________________________________________________
+
+1. What is the name of the table that stores product information?
+-> The table that stores product information is named "products".
+_____________________________________________________________________________________________________________________________________
+
+2. What are the columns in the products table?
+-> 1. product_code (ID of the purchased item)
+   2. product_name (Name of the product)
+   3. category (Product category (e.g., Smartphone, TV))
+   4. launch_date (Launch date of the product)
+   5. price (Price of the product)
+   6. manufacturer (Manufacturer of the product)
+   7. warranty_period (Warranty period of the product)
+   8. stock_quantity (Quantity of product in stock)
+   9. rating (Customer rating of the product)
+   10. dimensions (Dimensions of the product)
+   11. weight (Weight of the product)
+   12. color (Color of the product)
+   13. material (Material of the product)
+   14. power_usage (Power usage of the product)
+   15. model_number (Model number of the product)
+_______________________________________________________________________________________________________________________________________
+
+3. What is the name of the column that stores the ID of the purchased item in the products table?
+-> The column that stores the ID of the purchased item in the products table is named "product\_code".
+_______________________________________________________________________________________________________________________________________
+
+4. What are the names of all the tables in the database?
+-> The names of the tables in the database are: products, sales, support_tickets, marketing_campaigns, employees, departments, inventory, suppliers, orders,    and customers.
+________________________________________________________________________________________________________________________________________
+
+5.What is the primary key for each table?
+->The primary key for each table is not explicitly mentioned in the provided context. However, based on common database practices, the primary key is usually a unique column that identifies each record in a table. Here are some suggestions for the primary keys for each table:
+
+1. products: product_code
+2. sales: sale_id
+3. support_tickets: ticket_id
+4. marketing_campaigns: campaign_id
+5. employees: employee_id
+6. departments: department_id
+7. inventory: inventory_id
+8. suppliers: supplier_id
+9. orders: order_id
+10. customers: client_id
+_____________________________________________________________________________________________________________________________________________
+
+6. What are the data types of each column in the "sales" table?
+-> The data types of each column in the sales table are as follows:
+
+1. sale_id: Integer
+2. buyer_id: Integer
+3. transaction_product_id: Integer
+4. sale_date: Date
+5. quantity: Integer
+6. total_amount: Float
+7. sales_channel: String
+8. payment_method: String
+9. discount: Float
+10. sales_rep: String
+11. delivery_date: Date
+12. delivery_status: String
+13. invoice_number: String
+14. shipping_cost: Float
+15. tax_amount: Float
+_____________________________________________________________________________________________________________________________________________
+
+7.Which tables contain a "date" column and what are their names?
+-> The tables that contain a date column are: products, sales, support_tickets, marketing_campaigns, employees, departments, inventory, suppliers, orders, and customers. These tables store various types of date-related information such as launch dates, sale dates, issue dates, campaign start and end dates, hire dates, department establishment dates, inventory expiry dates, order shipping and delivery dates, and customer registration dates.
+_____________________________________________________________________________________________________________________________________________
+
+8. How many columns are there in the "support_tickets" table?
+-> There are 15 columns in the support_tickets table.
+_____________________________________________________________________________________________________________________________________________
+
+9. What is the description of the "marketing_campaigns" table?
+-> The marketing_campaigns table stores marketing campaign information. Here is the description:
+
+Table name: marketing_campaigns
+
+Description: Stores marketing campaign information
+
+Column name Description
+
+1. campaign_id (Unique identifier for each campaign)
+2. campaign_name (Name of the campaign)
+3. start_date (Start date of the campaign)
+4. end_date (End date of the campaign)
+5. budget (Budget allocated for the campaign)
+6. target_audience (Target audience for the campaign)
+7. advertised_product_id (ID of the purchased item)
+8. channels (Marketing channels used in the campaign (e.g., TV, Social Media))
+9. goal (Primary goal of the campaign (e.g., Brand Awareness, Lead Generation))
+10. region (Geographical region targeted by the campaign)
+11. creative_idea (Creative idea or theme of the campaign)
+12. ad_spend (Amount spent on advertising during the campaign)
+13. leads_generated (Number of leads generated through the campaign)
+14. conversions (Number of conversions achieved through the campaign)
+15. roi (Return on investment for the campaign)
+_____________________________________________________________________________________________________________________________________________
+
+10. List the columns in the "employees" table and their corresponding descriptions.
+-> The employees table has the following columns and their descriptions:
+
+1. employee_id (Unique identifier for each employee)
+2. first_name (First name of the employee)
+3. last_name (Last name of the employee)
+4. email (Email address of the employee)
+5. staff_contact (contact number for audio communication)
+6. hire_date (Date the employee was hired)
+7. job_title (Job title of the employee)
+8. department (Department where the employee works)
+9. manager_id (ID of the employee's manager)
+10. salary (Annual salary of the employee)
+11. bonus (Annual bonus of the employee)
+12. commission_pct (Commission percentage of the employee)
+13. staff_residence (Physical location of agent)
+14. city (City of the employee)
+15. state (State of the employee)
+
+These columns store information about the employees working in the organization.
+_____________________________________________________________________________________________________________________________________________
+
+11. Which table has the highest number of columns?
+-> The table with the highest number of columns is the "support_tickets" table, with 15 columns.
+_____________________________________________________________________________________________________________________________________________
+
+12. What is the foreign key relationship between the "sales" table and other tables?
+-> The foreign key relationship between the sales table and other tables is established through the following columns:
+
+1. buyer_id: This column in the sales table is a foreign key that references the client_id column in the customers table. This relationship allows us to link a sale to a specific customer.
+
+2. transaction_product_id: This column in the sales table is a foreign key that references the product_code column in the products table. This relationship allows us to link a sale to a specific product.
+
+3. sales_rep: This column in the sales table is a foreign key that references the employee_id column in the employees table. This relationship allows us to link a sale to a specific sales representative.
+
+4. delivery_status: This column in the sales table is a foreign key that references the status column in the delivery_statuses table. This relationship allows us to link a sale to a specific delivery status.
+
+5. sales_channel: This column in the sales table is a foreign key that references the channel_id column in the sales_channels table. This relationship allows us to link a sale to a specific sales channel.
+
+6. payment_method: This column in the sales table is a foreign key that references the payment_method_id column in the payment_methods table. This relationship allows us to link a sale to a specific payment method.
+
+7. support_ticket_id: This column in the sales table is a foreign key that references the ticket_id column in the support_tickets table. This relationship allows us to link a sale to a specific support ticket if a customer requests support for the purchased product.
+
+8. marketing_campaign_id: This column in the sales table is a foreign key that references the campaign_id column in the marketing_campaigns table. This relationship allows us to link a sale to a specific marketing campaign if the sale was generated through a marketing effort.
+
+9. order_id: This column in the sales table is a foreign key that references the order_id column in the orders table. This relationship allows us to link a sale to a specific order if the sale is part of a larger order.
+
+10. inventory_item_id: This column in the sales table is a foreign key that references the inventory_item_id column in the inventory table. This relationship allows us to link a sale to a specific inventory item if the product sold is part of multiple inventory items (e.g., different colors or sizes).
+
+11. warehouse_location: This column in the sales table is a foreign key that references the warehouse_location_id column in the warehouse_locations table. This relationship allows us to link a sale to a specific warehouse location from which the product was shipped.
+
+12. shipping_method: This column in the sales table is a foreign key that references the shipping_method_id column in the shipping_methods table. This relationship allows us to link a sale to a specific shipping method used for the order.
+
+13. supplier_id: This column in the sales table is a foreign key that references the supplier_id column in the suppliers table. This relationship allows us to link a sale to a specific supplier from which the product was purchased.
+
+14. department_id: This column in the sales table is a foreign key that references the department_id column in the departments table. This relationship allows us to link a sale to a specific department within the company that was involved in the sale.
+
+15. product_category_id: This column in the sales table is a foreign key that references the category_id column in the product_categories table. This relationship allows us to link a sale to a specific product category of the purchased item.
+
+These foreign key relationships help maintain data integrity and consistency across the tables.
+_____________________________________________________________________________________________________________________________________________
+
+13. Are there any unique constraints defined on any columns across all tables?
+-> In the provided database schema, there are no explicit unique constraints defined on any columns across all tables. However, some columns such as "product_code" in the "products" table, "sale_id" in the "sales" table, "ticket_id" in the "support_tickets" table, "campaign_id" in the "marketing_campaigns" table, "employee_id" in the "employees" table, "department_id" in the "departments" table, "inventory_id" in the "inventory" table, "supplier_id" in the "suppliers" table, "order_id" in the "orders" table, and "client_id" in the "customers" table are likely to have unique values as they are primary keys.
+_____________________________________________________________________________________________________________________________________________
+
+14. What are the different categories of issues listed in the "support_tickets" table?
+-> The support_tickets table has a column named "category" which lists the different categories of issues. The categories listed are:
+
+1. Hardware
+2. Software
+
+These categories are used to classify the issues reported by customers, making it easier for the support team to address them efficiently.
+_____________________________________________________________________________________________________________________________________________
+
+15. What is the maximum length of data that can be stored in the "product_name" column in the "products" table?
+-> The maximum length of data that can be stored in the product_name column in the products table is not specified in the provided context. However, it's common practice to limit the length of a column like product_name to around 255 characters or less to ensure efficient data storage and retrieval. If the exact maximum length is needed, it would be best to consult the database schema or the database administrator.
+_____________________________________________________________________________________________________________________________________________
+
+16. What is the description of the "feedback_score" column in the "support_tickets" table?
+-> The description of the feedback_score column in the support_tickets table is "Feedback score given by the customer". This column stores the rating provided by the customer for the support provided to them.
+_____________________________________________________________________________________________________________________________________________
+
+17. How many tables have a column related to "price" or "cost"?
+-> There are 5 tables that have a column related to price or cost:
+
+1. products - price column
+2. sales - total_amount column
+3. inventory - cost_per_unit column
+4. orders - total_amount column
+5. suppliers - payment_terms (implicitly related to cost)
+_____________________________________________________________________________________________________________________________________________
+
