@@ -1,0 +1,128 @@
+_________________________________________________________________[Query 1]___________________________________________________________________________________
+</s>
+<|user|>
+Give me list of all tables present in data
+</s>
+<|assistant|>
+The following are the tables present in the data:
+
+1. products
+2. sales
+3. support_tickets
+4. marketing_campaigns
+5. employees
+6. departments
+7. inventory
+8. suppliers
+9. orders
+10. customers
+_________________________________________________________________[Query 2]___________________________________________________________________________________
+
+</s>
+<|user|>
+give me tables that can be join
+</s>
+<|assistant|>
+Based on the provided data, the following tables can be joined:
+
+1. products and sales: Join on product_id
+2. products and support_tickets: Join on product_id
+3. sales and support_tickets: Join on sale_id and product_id
+4. employees and departments: Join on manager_id
+5. departments and employees: Join on department_id
+6. inventory and sales: Join on product_id
+7. inventory and support_tickets: Join on product_id
+8. marketing_campaigns and sales: Join on product_id
+9. marketing_campaigns and support_tickets: Join on product_id
+10. orders and sales: Join on order_id
+11. orders and support_tickets: Join on order_id and product_id
+12. customers and sales: Join on customer_id
+13. customers and support_tickets: Join on customer_id
+14. employees and customers: Join on employee_id (if customers are employees)
+15. departments and customers: Join on department_id (if customers are departments)
+
+_________________________________________________________________[Query 3]___________________________________________________________________________________
+</s>
+<|user|>
+Give me all 10 table with their description
+</s>
+<|assistant|>
+Here are the 10 tables with their descriptions:
+
+1. products: Stores product information
+2. sales: Stores sales information
+3. support_tickets: Stores customer support ticket information
+4. marketing_campaigns: Stores marketing campaign information
+5. employees: Stores employee information
+6. departments: Stores department information
+7. inventory: Stores inventory information
+8. suppliers: Stores supplier information
+9. orders: Stores order information
+10. customers: Stores customer information
+_________________________________________________________________[Query 4]___________________________________________________________________________________
+</s>
+<|user|>
+How many tables have a column related to price or cost?
+</s>
+<|assistant|>
+There are 7 tables with a column related to price or cost: products, sales, support_tickets, marketing_campaigns, inventory, suppliers, and orders. The columns related to price or cost are as follows:
+
+1. products: price
+2. sales: total_amount
+3. support_tickets: None
+4. marketing_campaigns: budget, ad_spend
+5. inventory: cost_per_unit
+6. suppliers: None
+7. orders: total_amount
+
+In the case of marketing_campaigns, the columns budget and ad_spend are related to cost, even though they are not explicitly named as 'cost'. Similarly, in the case of sales, the column total_amount is related to price, even though it is not explicitly named as 'price'.
+_________________________________________________________________[Query 5]___________________________________________________________________________________
+</s>
+<|user|>
+Give me a primary key for each table
+</s>
+<|assistant|>
+Here are the primary keys for each table:
+
+1. products: product_id
+2. sales: sale_id
+3. support_tickets: ticket_id
+4. marketing_campaigns: campaign_id
+5. employees: employee_id
+6. departments: department_id
+7. inventory: inventory_id
+8. suppliers: supplier_id
+9. orders: order_id
+10. customers: customer_id
+_________________________________________________________________[Query 6]___________________________________________________________________________________
+</s>
+<|user|>
+Give me foreign key relationship with department table and other table
+</s>
+<|assistant|>
+Foreign key relationships in the given tables are as follows:
+
+1. employees table:
+   - manager_id (in employees table) is a foreign key referencing department_id (in departments table). This establishes a relationship between the employees and departments tables, where an employee's manager is associated with a specific department.
+
+2. departments table:
+   - No foreign keys are defined in the departments table.
+
+3. inventory table:
+   - product_id (in inventory table) is a foreign key referencing product_id (in products table). This establishes a relationship between the inventory and products tables, where the inventory records are linked to specific products.
+
+4. sales table:
+   - product_id (in sales table) is a foreign key referencing product_id (in products table). This establishes a relationship between the sales and products tables, where the sales records are linked to specific products.
+
+5. support_tickets table:
+   - product_id (in support_tickets table) is a foreign key referencing product_id (in products table). This establishes a relationship between the support_tickets and products tables, where the support tickets are linked to specific products.
+
+6. marketing_campaigns table:
+   - product_id (in marketing_campaigns table) is a foreign key referencing product_id (in products table). This establishes a relationship between the marketing_campaigns and products tables, where the marketing campaigns are linked to specific products.
+
+7. orders table:
+   - customer_id (in orders table) is a foreign key referencing customer_id (in customers table). This establishes a relationship between the orders and customers tables, where the orders are linked to specific customers.
+   - product_id (in orders table) is a foreign key referencing product_id (in products table). This establishes a relationship between the orders and products tables, where the orders are linked to specific products.
+
+8. customers table:
+   - No foreign keys are defined in the customers table.
